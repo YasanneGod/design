@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой красивый лендинг</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #3498db;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #2980b9 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('https://wsstgprdphotosonic01.blob.core.windows.net/photosonic/e9d15af1-474e-4cc1-ac78-067f655c3b56.png') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #newsletter {
+            padding: 15px;
+            color: #fff;
+            background: #3498db;
+        }
+        #newsletter h1 {
+            float: left;
+        }
+        #newsletter form {
+            float: right;
+            margin-top: 15px;
+        }
+        #newsletter input[type="email"] {
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
+        .button_1 {
+            height: 38px;
+            background: #e74c3c;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #fff;
+        }
+        #boxes {
+            margin-top: 20px;
+        }
+        #boxes .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+        #boxes .box img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #2980b9;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Acme</span> Web Design</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Профессиональный веб-дизайн</h1>
+            <p>Мы создаем красивые и функциональные веб-сайты, которые помогут вашему бизнесу расти и процветать в цифровом мире.</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Подпишитесь на наши новости</h1>
+            <form>
+                <input type="email" placeholder="Введите Email...">
+                <button type="submit" class="button_1">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="https://wsstgprdphotosonic01.blob.core.windows.net/photosonic/81831a44-c638-43b3-aa45-ba48e5dd9de3.png" alt="Дизайн">
+                <h3>Дизайн HTML5</h3>
+                <p>Создаем современные и отзывчивые веб-сайты с использованием последних технологий.</p>
+            </div>
+            <div class="box">
+                <img src="https://wsstgprdphotosonic01.blob.core.windows.net/photosonic/dfe7d628-a8fe-4a6f-a477-d8bcc7b907fc.png" alt="CSS3">
+                <h3>Стилизация CSS3</h3>
+                <p>Применяем передовые техники CSS для создания привлекательного внешнего вида.</p>
+            </div>
+            <div class="box">
+                <img src="https://wsstgprdphotosonic01.blob.core.windows.net/photosonic/6e3087ad-7656-42ee-9fec-642a17fbf46e.png" alt="Графика">
+                <h3>Графический дизайн</h3>
+                <p>Разрабатываем уникальную графику и иконки для вашего бренда.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Acme Web Design, Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>
